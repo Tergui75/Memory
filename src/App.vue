@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <AppHeader msg="Welcome to Your Vue.js App"/>
+  <AppContent msg="Welcome to Your Vue.js App"/>
+  <GameConfig msg="Welcome to Your Vue.js App"/>
+  <GamePlay msg="Welcome to Your Vue.js App"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppHeader from './components/AppHeader.vue'
+import AppContent from './components/AppContent.vue'
+import GamePlay from './components/GamePlay.vue'
+import GameConfig from './components/GameConfig.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AppHeader,
+    AppContent,
+    GamePlay,
+    GameConfig
   }
 }
+
+
+
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
